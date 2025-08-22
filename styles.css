@@ -1,3 +1,29 @@
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/fraunces-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/montserrat-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/montserrat-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +39,8 @@
     --color-white: hsl(0, 0%, 100%);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 
-.fraunces-<uniquifier> {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
-}  
-*/
 
 body {
     display: flex;
@@ -56,6 +64,7 @@ img {
 
 #product-text {
     padding: 20px;
+    margin: 0 10px;
 }
 
 h2 {
@@ -63,6 +72,8 @@ h2 {
     font-weight: 500;
     font-style: normal;
     color: var(--color-grey);
+    font-size: 14px;
+
 }
 
 h1{
@@ -77,11 +88,14 @@ h1{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     margin-bottom: 20px;
+    line-height: 1.75;
+    
 }
 
 #price {
     display: flex;
     flex-direction: row;
+    padding-bottom:10px;
 }
 
 #price h3 {
@@ -89,6 +103,7 @@ h1{
     font-family: "Fraunces", serif;
     font-weight: 700;
     padding-right: 20px;
+    font-size: 32px;
 }
 
 #price p {
